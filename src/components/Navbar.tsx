@@ -29,11 +29,15 @@ const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
           {/* Logo */}
           <div className="flex items-center">
             <button
-              onClick={() => onNavigate('home')}
-              className="text-2xl font-orbitron font-bold tron-glow-text hover:text-accent transition-colors"
-            >
-              JEDLIK MOTORS
-            </button>
+  onClick={() => onNavigate('home')}
+  className="flex items-center"
+>
+  <img
+    src="/jedlik_logo_transparent.png"
+    alt="Jedlik Motors"
+    className="h-10 w-auto object-contain"
+  />
+</button>
           </div>
 
           {/* Desktop Navigation */}
