@@ -73,14 +73,6 @@ const team = [
     gradient: "from-tron-glow to-primary",
     description: "Orchestrating strategy and cross-team coordination.",
   },
-  {
-    name: "Sathya Prasad",
-    role: "Mechanical Mentor",
-    initials: "SP",
-    photo: "/Sathya.jpg",
-    gradient: "from-primary to-tron-glow",
-    description: "Guiding the mechanical engineering vision of Jedlik Motors.",
-  },
 ];
 
 const OurTeamPage = () => {
