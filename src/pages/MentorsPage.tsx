@@ -17,6 +17,14 @@ const mentors = [
     gradient: "from-accent to-primary",
     description: "Shaping the electrical systems and power architecture of e-POD.",
   },
+  {
+    name: "Shankar Subramanian",
+    role: "Business Mentor - Go-to-Market & Investor Relations",
+    initials: "SS",
+    photo: "/Shankar.jpg",
+    gradient: "from-tron-glow to-primary",
+    description: "Steering go-to-market strategy and investor relations for Jedlik Motors.",
+  },
 ];
 
 const MentorsPage = () => {
@@ -64,12 +72,11 @@ const MentorsPage = () => {
       {/* Mentors Grid */}
       <section className="py-16 relative">
         <div className="container mx-auto px-4 relative z-10">
-          <div className="flex justify-center">
-            <div className="flex flex-col sm:flex-row justify-center gap-24">
-              {mentors.map((mentor, index) => (
+          <div className="flex flex-wrap justify-center gap-12 lg:gap-16">
+            {mentors.map((mentor, index) => (
                 <div
                   key={index}
-                  className="group relative animate-fade-in"
+                  className="group relative animate-fade-in w-full sm:w-80"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <div className="absolute -inset-1 bg-gradient-to-r from-primary via-accent to-tron-glow rounded-3xl opacity-0 group-hover:opacity-30 blur-xl transition-all duration-500"></div>
@@ -109,7 +116,6 @@ const MentorsPage = () => {
                   </div>
                 </div>
               ))}
-            </div>
           </div>
         </div>
       </section>
